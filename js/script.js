@@ -25,9 +25,10 @@ $(document).ready(function () {
   });
 
   $(document).keyup(function (e) {
-    if (e.which == 27) { 
+    if (e.which == 27) {
       $("html").animate({ scrollTop: 0 });
-      $("html").css("scrollBehavior", "auto"); };   // esc
+      $("html").css("scrollBehavior", "auto");
+    };   // esc
   });
 
   $(".navbar .menu li a").click(function () {
@@ -107,4 +108,10 @@ $(document).ready(function () {
   var swiper = new Swiper("#mobile", swiperConfig);
 
   $("#year").text(new Date().getFullYear());
+});
+
+
+VanillaTilt.init(document.querySelectorAll(".card"), {
+  max: 25,
+  speed: 400
 });
