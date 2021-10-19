@@ -1,0 +1,44 @@
+/* about section styling */
+.about {
+  background: var(--white);
+}
+
+.about .title::after {
+  content: "who i am";
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+  color: var(--primaryColor);
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right ul {
+  margin-left: 10px;
+}
+
+.about .about-content .right ul li {
+  color: var(--grey);
+}

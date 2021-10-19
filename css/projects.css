@@ -1,0 +1,194 @@
+/* projects section styling */
+.projects {
+  color: var(--white);
+  background: var(--dark);
+}
+
+.projects .title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.projects .swiper-container .title::before {
+  background: var(--white);
+}
+
+.projects #web .title::after {
+  background: var(--dark);
+  content: "Web";
+}
+
+.projects #react .title::after {
+  background: var(--dark);
+  content: "React";
+}
+
+.projects #fullstack .title::after {
+  background: var(--dark);
+  content: "Fullstack";
+}
+
+.projects #mobile .title::after {
+  background: var(--dark);
+  content: "Mobile";
+}
+
+.projects .projects-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 400px;
+}
+
+.projects .card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 200px 150px 50px;
+  grid-template-areas: "image""text""stats";
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 2s ease-in-out;
+}
+
+.projects .card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.projects .card-image {
+  grid-area: image;
+}
+
+.projects .card-text {
+  grid-area: text;
+}
+
+.projects .card-stats {
+  grid-area: stats;
+}
+
+.projects .card-image {
+  border-bottom: 3px solid var(--dark);
+  grid-area: image;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.projects .card-image p {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 5px;
+  left: 10px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--primaryColor);
+}
+
+.projects .card-text {
+  grid-area: text;
+  margin: 10px;
+  cursor: default;
+}
+
+.projects .card-text p {
+  color: var(--grey);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.projects .card-text div ul {
+  color: var(--primaryColor);
+}
+
+.projects .card-text ul li {
+  color: var(--primaryColor);
+  display: inline-block;
+}
+
+.projects .card-text h2 {
+  margin-top: 0px;
+  font-size: 24px;
+  color: var(--dark);
+  margin-bottom: 10px;
+}
+
+.projects .card-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: var(--primaryColor);
+  cursor: default;
+}
+
+.projects .card-stats .stat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects .card-stats .stat a {
+  color: inherit;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.projects .card-stats .stat:first-child {
+  border-right: 2px solid var(--white);
+}
+
+.projects .card-stats .stat a img {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.projects .view-all {
+  display: inline-block;
+  background: var(--primaryColor);
+  color: var(--white);
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid var(--primaryColor);
+  transition: all 0.3s ease;
+}
+
+.projects .view-all:hover {
+  color: var(--primaryColor);
+  background: none;
+}

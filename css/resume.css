@@ -1,0 +1,14 @@
+.resume {
+  background-color: var(--white);
+}
+
+.resume .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.resume .title::after {
+  content: "resume me";
+}
