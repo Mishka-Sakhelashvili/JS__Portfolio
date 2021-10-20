@@ -78,19 +78,6 @@
   .services .serv-content .card {
     width: 100%;
   }
-
-  .projects .card-text h2 {
-    font-size: 18px;
-  }
-
-  .projects .card-stats .stat a img {
-    margin-right: 5px;
-    width: 18px;
-  }
-
-  .projects .card-stats .stat a div {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 500px) {

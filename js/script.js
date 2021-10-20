@@ -99,19 +99,19 @@ $(document).ready(function () {
     // },
   };
 
-  var swiper = new Swiper("#web", swiperConfig);
+  var swiper = new Swiper("#FrontEnd", swiperConfig);
 
-  // var swiper = new Swiper("#react", swiperConfig);
+  var swiper = new Swiper("#FullStack", swiperConfig);
 
-  // var swiper = new Swiper("#fullstack", swiperConfig);
-
-  var swiper = new Swiper("#mobile", swiperConfig);
+  var swiper = new Swiper("#Mobile", swiperConfig);
 
   $("#year").text(new Date().getFullYear());
+
+
+  VanillaTilt.init(document.querySelectorAll(".skills .card"), {
+    max: 25,
+    speed: 400
+  });
 });
 
 
-VanillaTilt.init(document.querySelectorAll(".card"), {
-  max: 25,
-  speed: 400
-});

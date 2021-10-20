@@ -7,6 +7,19 @@
   --dark: #101010;
   --grey: #303030;
   --borderCorner: 6px;
+
+  --reactColor: #61DBFB;
+  --nodeColor: #3c873a;
+  --sqlColor: #3765af;
+  --mongoColor: #4FA83D;
+  --phpColor: #8892BF;
+  --vueColor: #42b883;
+  --typescriptColor: #CC6600;
+  --jsColor: #F0DB4F;
+  --htmlColor: #FF5733;
+  --cssColor: #264de4;
+  --rnColor: #61DBFB;
+  --laravelColor: #fb503b;
 }
 
 * {
