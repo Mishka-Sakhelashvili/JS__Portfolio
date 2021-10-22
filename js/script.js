@@ -44,18 +44,18 @@ $(document).ready(function () {
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["Front Developer", "Back Developer", "Mobile Developer"],
+    strings: ["Front-End", "Back-End", "Mobile"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
   });
 
-  var typed = new Typed(".typing-2", {
-    strings: ["Front Developer", "Back Developer", "Mobile Developer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-  });
+  // var typed = new Typed(".typing-2", {
+  //   strings: ["Front Developer", "Back Developer", "Mobile Developer"],
+  //   typeSpeed: 100,
+  //   backSpeed: 60,
+  //   loop: true,
+  // });
 
   // owl carousel script
   $(".carousel").owlCarousel({
@@ -91,7 +91,7 @@ $(document).ready(function () {
       modifier: 1,
       slideShadows: true,
     },
-    initialSlide: 1,
+    initialSlide: 2,
     // loop: true,
     // autoplay: {
     //   delay: 3000,
@@ -111,6 +111,16 @@ $(document).ready(function () {
   VanillaTilt.init(document.querySelectorAll(".skills .card"), {
     max: 25,
     speed: 400
+  });
+
+  // VanillaTilt.init(document.querySelectorAll("#about .card"), {
+  //   max: 25,
+  //   speed: 400
+  // });
+
+  $('#services .option').click(function () {
+    $('#services .option').removeClass('activeServ');
+    $(this).addClass('activeServ');
   });
 });
 

@@ -1,4 +1,3 @@
-/* about section styling */
 .about {
   background: var(--white);
 }
@@ -7,38 +6,134 @@
   content: "who i am";
 }
 
-.about .about-content .left {
-  width: 45%;
+.about .about-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-.about .about-content .left img {
-  max-width: 400px;
-  object-fit: cover;
-  border-radius: 8px;
+.about .about-content .left {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .about .about-content .right {
+  padding-left: 30px;
   width: 55%;
 }
 
-.about .about-content .right .text {
+.about .about-content .right span {
   font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.about .about-content .right .text span {
+  font-weight: 700;
+  margin-bottom: 15px;
   color: var(--primaryColor);
-}
-
-.about .about-content .right p {
-  text-align: justify;
-}
-
-.about .about-content .right ul {
-  margin-left: 10px;
 }
 
 .about .about-content .right ul li {
   color: var(--grey);
+  margin-bottom: 5px;
+}
+
+.about .left .card {
+  border-radius: 20px;
+  width: 320px;
+  height: 320px;
+  background: url(../images/profile/profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.about .left .card:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(#000, .92);
+}
+
+.about .left .card .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.about .left span {
+  width: 25%;
+  height: 100%;
+  background: url(../images/profile/profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .5s;
+}
+
+.about .left span:nth-child(1) {
+  background-position: 0;
+  transition-delay: 0
+}
+
+.about .left span:nth-child(2) {
+  background-position: 33.33333%;
+  transition-delay: .1s
+}
+
+.about .left span:nth-child(3) {
+  background-position: 66.66666%;
+  transition-delay: .2s
+}
+
+.about .left span:nth-child(4) {
+  background-position: 100%;
+  transition-delay: .3s
+}
+
+.about .left .content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--primaryColor);
+  font-size: 18px;
+  padding: 20px 20px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  background-color: black;
+  opacity: 0.9;
+}
+
+.about .left .card:hover .img>span {
+  transform: translateY(-100%)
+}
+
+.about .left .card:hover .content {
+  transform: translateY(0%);
+  transition: 1s;
+  transition-delay: .1s;
+}
+
+@media (max-width: 950px) {
+
+  .about .about-content {
+    flex-direction: column;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .about .about-content .left {
+    display: none;
+  }
 }

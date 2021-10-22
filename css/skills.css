@@ -1,6 +1,7 @@
 /* skills section styling */
 .skills {
   background: var(--white);
+  min-height: 100vh;
 }
 
 .skills .skills-content {

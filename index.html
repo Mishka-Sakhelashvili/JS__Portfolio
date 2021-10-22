@@ -10,6 +10,19 @@
   />
   <title>Personal Portfolio Website</title>
   <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@700&display=swap"
+    rel="stylesheet"
+  >
+  <link
     rel="icon"
     type="image/png"
     href="./images/icons/maxcdn-brands.svg"
@@ -152,44 +165,34 @@
     </div>
   </nav>
 
-  <!-- main slider section finish  -->
-  <div class="main-slider">
-    <div class="img-slider">
-      <div class="slide active">
-        <div></div>
-      </div>
-      <div class="slide">
-        <div></div>
-      </div>
-      <div class="slide">
-        <div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- slider navigation section finish -->
-  <div class="navigation">
-    <div class="btn active"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-  </div>
-
   <!-- home section start finish -->
   <section
-    class="home"
+    class="showcase home"
     id="home"
   >
-    <div class="max-width">
-      <div class="home-content">
+    <div class="video-container">
+      <video
+        src="https://designsupply-web.com/samplecontent/vender/codepen/20181014.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+
+      <div class="overlay">
+      </div>
+    </div>
+    <div class="content">
+      <div class="home-content glass">
         <div class="text-1">Hello, my name is</div>
         <div class="text-2">Mishka</div>
-        <div class="text-3">And I'm a <p><span class="typing"></span></p>
-        </div>
-
-        <!-- <a href="#about">About me</a> -->
+        <div class="text-3">And I'm a</div>
+        <div><span class="typing"></span></div>
+        <div>Developer</div>
       </div>
     </div>
   </section>
+
+
 
   <!-- about section start finish -->
   <section
@@ -200,36 +203,46 @@
       <h2 class="title">About me</h2>
       <div class="about-content">
         <div class="column left">
-          <img
-            src="./images/profile/profile.jpg"
-            alt=""
-          />
-        </div>
-        <div class="column right">
-          <div class="text">
-            Mishka Sakhelashvili <p><span class="typing-2"></span></p>
+
+          <div class="card">
+            <div class="img">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="content">
+              <p>Front,
+                Back &
+                Mobile
+              </p>
+              <p>Developer</p>
+            </div>
           </div>
-          <p>
-            <ul>
-              <li>Build customised websites to the highest specifications.</li>
-              <li>Work to under pressure and to tight deadlines.</li>
-              <li>Come up with solutions to seemingly intractable problems.</li>
-              <li>Carry out routine site maintenance. Drive projects forward.</li>
-              <li>Work closely with other developers and professionals.</li>
-              <li>Make recommendations on the use of new and emerging technologies.</li>
-              <li>Produce feasibility and usability reports for projects as well as accurate cost projections.</li>
-              <li>Organize and manage multiple priorities simultaneously.</li>
-              <li>Quickly fit into any existing team of developers.</li>
-              <li>
-                Building reusable components and front-end libraries for future use.
-              </li>
-              <li>
-                Collaborate with system engineers, data scientists, frontend developers and software developers to
-                implement solutions that are aligned with and extend shared platforms and solutions
-              </li>
-              <li>Work through a project life cycle & Communicate confidently.</li>
-            </ul>
-          </p>
+        </div>
+
+        <div class="column right">
+          <ul>
+            <li><span>Mishka Sakhelashvili</span></li>
+            <li>Build customised websites to the highest specifications.</li>
+            <li>Work to under pressure and to tight deadlines.</li>
+            <li>Come up with solutions to seemingly intractable problems.</li>
+            <li>Carry out routine site maintenance. Drive projects forward.</li>
+            <li>Work closely with other developers and professionals.</li>
+            <li>Make recommendations on the use of new and emerging technologies.</li>
+            <li>Produce feasibility and usability reports for projects as well as accurate cost projections.</li>
+            <li>Organize and manage multiple priorities simultaneously.</li>
+            <li>Quickly fit into any existing team of developers.</li>
+            <li>
+              Building reusable components and front-end libraries for future use.
+            </li>
+            <li>
+              Collaborate with system engineers, data scientists, frontend developers and software developers to
+              implement solutions that are aligned with and extend shared platforms and solutions
+            </li>
+            <li>Work through a project life cycle & Communicate confidently.</li>
+          </ul>
+
         </div>
       </div>
     </div>
@@ -243,40 +256,94 @@
     <div class="max-width">
       <h2 class="title">My services</h2>
       <div class="serv-content">
+        <div class="options">
 
-        <div class="card">
-          <div class="box">
-            <div class="text">Frontend Development</div>
-            <p>
-              Manage website development projects from initial design through completion, optimizing all cross-browser
-              and multi-platform compatibility. Work closely with programmers and clients to meet project requirements,
-              goals, and desired functionality.
-            </p>
+          <div class="option activeServ">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="info">
+                <div class="main">Front End Development</div>
+              </div>
+
+              <div class="test">Manage website development projects from initial design through completion, optimizing
+                all cross-browser and multi-platform compatibility. Work closely with programmers and clients to meet
+                project requirements, goals, and desired functionality.
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="box">
-            <div class="text">Backend Development</div>
-            <p>
-              Responsible for defining, developing, and evolving software in a fast paced and agile development
-              environment using the latest software methods and infrastructure. Work with a variety of
-              datastores (NoSQL & SQL). Working with multiple delivery platforms such as mobile & web.
-            </p>
+          <div class="option">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="info">
+                <div class="main">Front End Development</div>
+              </div>
+
+              <div class="test">Manage website development projects from initial design through completion, optimizing
+                all cross-browser and multi-platform compatibility. Work closely with programmers and clients to meet
+                project requirements, goals, and desired functionality.
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="box">
-            <div class="text">Mobile Development</div>
-            <p>
-              Develop new mobile application on Android and IOS. Develops integration of the core systems or external
-              applications. Develop a method to build and launch applications at a fast pace. Complete code base
-              conversion to React Native with feature parity.
-            </p>
+          <div class="option">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="info">
+                <div class="main">Front End Development</div>
+              </div>
+
+              <div class="test">Manage website development projects from initial design through completion, optimizing
+                all cross-browser and multi-platform compatibility. Work closely with programmers and clients to meet
+                project requirements, goals, and desired functionality.
+              </div>
+            </div>
           </div>
-        </div>
 
+          <div class="option">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="info">
+                <div class="main">Front End Development</div>
+              </div>
+
+              <div class="test">Manage website development projects from initial design through completion, optimizing
+                all cross-browser and multi-platform compatibility. Work closely with programmers and clients to meet
+                project requirements, goals, and desired functionality.
+              </div>
+            </div>
+          </div>
+
+          <div class="option">
+            <div class="shadow"></div>
+            <div class="label">
+              <div class="icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="info">
+                <div class="main">Front End Development</div>
+              </div>
+
+              <div class="test">Manage website development projects from initial design through completion, optimizing
+                all cross-browser and multi-platform compatibility. Work closely with programmers and clients to meet
+                project requirements, goals, and desired functionality.
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
@@ -299,7 +366,6 @@
               <i class="fab fa-react img"></i>
             </div>
           </div>
-
           <div class="card mongodb">
             <div class="box">
               <h2 class="name-shadow">MongoDB</h2>
@@ -419,13 +485,15 @@
               >
                 <h3>Blog UI Blog</h3>
               </div>
-
               <div class="content">
-                <div>
-                  <p>Application Type</p>
-                  <span>ecomerce aplikacia </span>
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
                 <div class="link">
                   <a href="">Read More</a>
                 </div>
@@ -439,13 +507,15 @@
               >
                 <h3>Blog UI Blog</h3>
               </div>
-
               <div class="content">
-                <div>
-                  <p>Application Type</p>
-                  <span>ecomerce aplikacia </span>
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
                 <div class="link">
                   <a href="">Read More</a>
                 </div>
@@ -459,13 +529,15 @@
               >
                 <h3>Blog UI Blog</h3>
               </div>
-
               <div class="content">
-                <div>
-                  <p>Application Type</p>
-                  <span>ecomerce aplikacia </span>
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
                 <div class="link">
                   <a href="">Read More</a>
                 </div>
@@ -479,13 +551,15 @@
               >
                 <h3>Blog UI Blog</h3>
               </div>
-
               <div class="content">
-                <div>
-                  <p>Application Type</p>
-                  <span>ecomerce aplikacia </span>
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
                 <div class="link">
                   <a href="">Read More</a>
                 </div>
@@ -499,13 +573,15 @@
               >
                 <h3>Blog UI Blog</h3>
               </div>
-
               <div class="content">
-                <div>
-                  <p>Application Type</p>
-                  <span>ecomerce aplikacia </span>
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
                 <div class="link">
                   <a href="">Read More</a>
                 </div>
@@ -519,13 +595,37 @@
               >
                 <h3>Blog UI Blog</h3>
               </div>
-
               <div class="content">
-                <div>
-                  <p>Application Type</p>
-                  <span>ecomerce aplikacia </span>
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
+                <div class="link">
+                  <a href="">Read More</a>
+                </div>
+              </div>
+            </div>
 
+            <div class="swiper-slide">
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
+                </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
                 <div class="link">
                   <a href="">Read More</a>
                 </div>
@@ -535,7 +635,7 @@
           </div>
         </div>
 
-        <!-- <div
+        <div
           class="swiper-container"
           id="FullStack"
         >
@@ -543,213 +643,119 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/wallet.jpg')"
-                >
-                  <p># <span>1</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2> Revenues / Expenses </h2>
-                  <div>
-                    <p>Description of revenues and expenditures, display and control of statistics
-                    </p>
-                    <ul>
-                      <li>HTML |</li>
-                      <li>CSS |</li>
-                      <li>JS</li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://mishka-sakhelashvili.github.io/JS__Wallet/"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">View</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/JS__Wallet"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/quiz.jpg')"
-                >
-                  <p># <span>2</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2>Entertainment Quiz </h2>
-                  <div>
-                    <p>A quiz that we can complete and understand the correct answers
-                    </p>
-                    <ul>
-                      <li>HTML |</li>
-                      <li>CSS |</li>
-                      <li>JS</li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://mishka-sakhelashvili.github.io/JS__Quiz/"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">View</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/JS__Quiz"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/natours.jpg')"
-                >
-                  <p># <span>3</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2> Natours </h2>
-                  <div>
-                    <p>User interface depicting nature sights
-                    </p>
-                    <ul>
-                      <li>HTML |</li>
-                      <li>CSS </li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://mishka-sakhelashvili.github.io/MarkUp__Natours/"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">View</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/MarkUp__Natours"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/nexter.jpg')"
-                >
-                  <p># <span>4</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2> Nexter </h2>
-                  <div>
-                    <p>User interface of Commercial facility
-                    </p>
-                    <ul>
-                      <li>HTML |</li>
-                      <li>CSS </li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
+                <div class="link">
+                  <a href="">Read More</a>
+                </div>
+              </div>
+            </div>
 
+            <div class="swiper-slide">
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://mishka-sakhelashvili.github.io/MarkUp__Natours/"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">View</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/MarkUp__Natours"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
+                </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
           </div>
-        </div> -->
+        </div>
 
-        <!-- <div
+        <div
           class="swiper-container"
           id="Mobile"
         >
@@ -757,304 +763,140 @@
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/rn/bookingapp_rn.png')"
-                >
-                  <p># <span>1</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2>Hotel Booking</h2>
-                  <div>
-                    <p>Hotel reservation application user interface, Visual environment for the user.
-                    </p>
-                    <ul>
-                      <li>React Native </li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__Booking__UI/blob/master/README.md"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Screens</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__Booking__UI"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/rn/fooddelivery_rn.png')"
-                >
-                  <p># <span>2</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2>Delivery application</h2>
-                  <div>
-                    <p>Delivery application user interface. Visual environment for the user.
-                    </p>
-                    <ul>
-                      <li>React Native </li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__Delivery__UI/blob/master/README.md"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Screens</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__Delivery__UI"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/rn/cameramap_rn.png')"
-                >
-                  <p># <span>3</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2>Camera & Map </h2>
-                  <div>
-                    <p>Application integration with mobile camera and Google Map service, test application
-                    </p>
-                    <ul>
-                      <li>React Native </li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__Camera/blob/master/README.md"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Screens</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__Camera"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/rn/restaurants_rn.png')"
-                >
-                  <p># <span>4</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2>Search for restaurants</h2>
-                  <div>
-                    <p>Find restaurants and categorize them using the REST API service.
-                    </p>
-                    <ul>
-                      <li>React Native </li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__RestaurantSearch/blob/master/README.md"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Screens</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__RestaurantSearch"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/rn/shop_rn.PNG')"
-                >
-                  <p># <span>5</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2>Online Shop </h2>
-                  <div>
-                    <p>Store model with storefront functionality, add product, edit & manage, add to cart, Registration
-                      and more
-                    </p>
-                    <ul>
-                      <li>React Native |</li>
-                      <li>Firebase </li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__SalesAppDemo/blob/master/README.md"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Screens</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__SalesAppDemo"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="card">
-                <div
-                  class="card-image"
-                  style="background-image: url('./images/projects/rn/meals_rn.png')"
-                >
-                  <p># <span>6</span> </p>
+              <div
+                class="image"
+                style="background-image: url('https://picsum.photos/200/300');"
+              >
+                <h3>Blog UI Blog</h3>
+              </div>
+              <div class="content">
+                <div class="description">
+                  <h4>Description</h4>
+                  <span>aplikacia aris ecomerce aqvs damateba washla redaqtireba </span>
                 </div>
-                <div class="card-text">
-                  <h2>Food</h2>
-                  <div>
-                    <p>Categorize feeds into different categories, navigate the app.
-                    </p>
-                    <ul>
-                      <li>React Native </li>
-                    </ul>
-                  </div>
+                <div class="technology">
+                  <h4>Used Technologies</h4>
+                  <span>React Node Redux Redux Redux Redux</span>
                 </div>
-                <div class="card-stats">
-                  <div class="stat">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__RecipeApp/blob/master/README.md"
-                      target="_blank"
-                      title="View To Site"
-                    >
-                      <img
-                        src="./images/icons/eye-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Screens</div>
-                    </a>
-                  </div>
-                  <div class="stat border">
-                    <a
-                      href="https://github.com/Mishka-Sakhelashvili/RN__RecipeApp"
-                      target="_blank"
-                      title="View To Code"
-                    >
-                      <img
-                        src="./images/icons/code-solid.svg"
-                        alt="Link"
-                      >
-                      <div class="type">Source</div>
-                    </a>
-                  </div>
+                <div class="link">
+                  <a href="">Read More</a>
                 </div>
               </div>
             </div>
+
 
           </div>
-        </div> -->
-
+        </div>
 
         <a
           href="https://github.com/Mishka-Sakhelashvili/All__Projects/blob/main/README.md"

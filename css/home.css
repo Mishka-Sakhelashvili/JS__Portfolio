@@ -1,24 +1,72 @@
-/* home section styling */
 .home {
-  display: flex;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   color: var(--white);
-  min-height: 500px;
-  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
-.home .max-width {
-  margin: auto 0 auto 30px;
+.home .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center center/cover;
 }
 
-.home .home-content .text-1 {
+.home .video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.home .video-container:after {
+  content: '';
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.home .overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, .3) 50%, rgba(0, 0, 0, .7) 50%);
+  background-size: 3px 3px;
+  z-index: 2;
+}
+
+.home .home-content {
+  margin: auto 0 auto 100px;
+  z-index: 2;
+  width: 330px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .home-content {
   font-size: 27px;
 }
 
 .home .home-content .text-2 {
   font-size: 75px;
-  font-weight: 600;
-  margin-left: -3px;
 }
 
 .home .home-content .text-3 {
@@ -26,25 +74,29 @@
   margin: 5px 0;
 }
 
-.home .home-content .text-3 span {
+.home .home-content span {
   color: var(--primaryColor);
-  font-weight: 500;
+  font-size: 40px;
 }
 
-.home .home-content a {
-  display: inline-block;
-  background: var(--primaryColor);
-  color: var(--white);
-  font-size: 25px;
-  padding: 12px 36px;
-  margin-top: 20px;
-  font-weight: 400;
-  border-radius: 6px;
-  border: 2px solid var(--primaryColor);
-  transition: all 0.3s ease;
+.home .glass {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 55%), rgba(255, 255, 255, 7%));
+  border-radius: 30px;
+  box-shadow: 10px 10px 20px rgba(0 0 0 / .24);
 }
 
-.home .home-content a:hover {
-  color: var(--primaryColor);
-  background: none;
+.home .glass::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  z-index: -1;
+  border-radius: 30px;
+  background-size: contain;
+}
+
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
 }

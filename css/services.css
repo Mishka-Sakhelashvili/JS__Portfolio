@@ -2,6 +2,7 @@
 .services {
   color: var(--white);
   background: var(--dark);
+  min-height: 100vh;
 }
 
 .services .title::before {
@@ -13,39 +14,154 @@
   content: "what i provide";
 }
 
-.services .serv-content .card {
-  width: calc(33% - 20px);
-  /* height: 280px; */
-  background: var(--dark);
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
+.services .serv-content {
+  display: flex;
+  justify-content: center;
+}
+
+.services .options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  /* min-width: 600px; */
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 400px;
+}
+
+.services .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+  background-size: auto 120%;
+  background-position: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 
-.services .serv-content .card:hover {
-  background: var(--primaryColor);
+.services .option:nth-child(1) {
+  --defaultBackground: var(--white);
 }
 
-
-.services .serv-content .card .box {
-  transition: all 0.3s ease;
+.services .option:nth-child(2) {
+  --defaultBackground: var(--white);
 }
 
-.services .serv-content .card:hover .box {
-  transform: scale(1.05);
+.services .option:nth-child(3) {
+  --defaultBackground: var(--white);
 }
 
-.services .serv-content .card .text {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
+.services .option:nth-child(4) {
+  --defaultBackground: var(--white);
+}
+
+.services .option:nth-child(5) {
+  --defaultBackground: var(--white);
+}
+
+.services .option.activeServ {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+}
+
+.services .option.activeServ .shadow {
+  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.services .option.activeServ .label {
+  bottom: 20px;
+  left: 20px;
+}
+
+.services .option.activeServ .info>div {
+  left: 0px;
+  opacity: 1;
+}
+
+.services .option:not(.activeServ) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+
+.services .option:not(.activeServ) .shadow {
+  bottom: -40px;
+  box-shadow: inset 0 -120px 0 -120px black, inset 0 -120px 0 -100px black;
+}
+
+.services .option:not(.activeServ) .label {
+  bottom: 10px;
+  left: 10px;
+}
+
+.services .option:not(.activeServ) .info>div {
+  left: 20px;
+  opacity: 0;
+}
+
+.services .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.services .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.services .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: black;
+  color: var(--defaultBackground);
+}
+
+.services .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: black;
+  white-space: pre;
+}
+
+.services .info>div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.services .main {
+  font-weight: bold;
+  font-size: 1.2rem;
   color: var(--primaryColor);
-  transition: all 0.3s ease;
-  font-weight: 500;
 }
 
-.services .serv-content .card:hover .text {
-  color: var(--dark);
+.services .sub {
+  transition-delay: 0.1s;
+}
+
+.services .option.activeServ .test {
+  position: absolute;
+  top: -300px;
+  padding: 50px;
+  color: black;
 }
