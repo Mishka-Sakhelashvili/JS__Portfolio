@@ -2,6 +2,12 @@
 .skills {
   background: var(--white);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.skills .max-width{
+  width: 100%;
 }
 
 .skills .skills-content {
@@ -46,7 +52,6 @@
   left: 0;
   text-align: center;
   width: 100%;
-  color: var(--white);
   transform-style: preserve-3d;
   transition: all 0.5s ease-in-out;
   opacity: 0;
@@ -84,7 +89,6 @@
   z-index: 10;
   transform: translate3d(-50%, -50%, 0px);
   opacity: 0;
-  color: var(--white);
 }
 
 .skills .carousel .card .box .img {
@@ -112,10 +116,26 @@
   color: var(--reactColor);
 }
 
+.skills .carousel .card.react .box .name-shadow,
+.skills .carousel .card.react .box .shadow {
+  color: var(--reactColorL);
+}
+
+
 /* node */
 .skills .carousel .card.node .box .name,
 .skills .carousel .card.node .box .img {
   color: var(--nodeColor);
+}
+
+.skills .carousel .card.node .box .name-shadow,
+.skills .carousel .card.node .box .shadow {
+  color: var(--nodeColorL);
+}
+
+.skills .carousel .card.node .box .img,
+.skills .carousel .card.node .box .shadow {
+  font-size: 220px;
 }
 
 /* php */
@@ -124,16 +144,26 @@
   color: var(--phpColor);
 }
 
-/* typescript */
-.skills .carousel .card.typescript .box .name,
-.skills .carousel .card.typescript .box .img {
-  color: var(--typescriptColor);
+.skills .carousel .card.php .box .img,
+.skills .carousel .card.php .box .shadow {
+  font-size: 220px;
 }
+
+.skills .carousel .card.php .box .name-shadow,
+.skills .carousel .card.php .box .shadow {
+  color: var(--phpColorL);
+}
+
 
 /* sql */
 .skills .carousel .card.sql .box .name,
 .skills .carousel .card.sql .box .img {
   color: var(--sqlColor);
+}
+
+.skills .carousel .card.sql .box .name-shadow,
+.skills .carousel .card.sql .box .shadow {
+  color: var(--sqlColorL);
 }
 
 /* mongodb */
@@ -142,10 +172,20 @@
   color: var(--mongoColor);
 }
 
+.skills .carousel .card.mongodb .box .name-shadow,
+.skills .carousel .card.mongodb .box .shadow {
+  color: var(--mongoColorL);
+}
+
 /* html */
 .skills .carousel .card.html .box .name,
 .skills .carousel .card.html .box .img {
   color: var(--htmlColor);
+}
+
+.skills .carousel .card.html .box .name-shadow,
+.skills .carousel .card.html .box .shadow {
+  color: var(--htmlColorL);
 }
 
 /* css */
@@ -154,10 +194,20 @@
   color: var(--cssColor);
 }
 
+.skills .carousel .card.css .box .name-shadow,
+.skills .carousel .card.css .box .shadow {
+  color: var(--cssColorL);
+}
+
 /* js */
 .skills .carousel .card.js .box .name,
 .skills .carousel .card.js .box .img {
   color: var(--jsColor);
+}
+
+.skills .carousel .card.js .box .name-shadow,
+.skills .carousel .card.js .box .shadow {
+  color: var(--jsColorL);
 }
 
 /* vue */
@@ -166,16 +216,31 @@
   color: var(--vueColor);
 }
 
+.skills .carousel .card.vue .box .name-shadow,
+.skills .carousel .card.vue .box .shadow {
+  color: var(--vueColorL);
+}
+
 /* react native */
 .skills .carousel .card.rn .box .name,
 .skills .carousel .card.rn .box .img {
   color: var(--rnColor);
 }
 
+.skills .carousel .card.rn .box .name-shadow,
+.skills .carousel .card.rn .box .shadow {
+  color: var(--rnColorL);
+}
+
 /* laravel */
 .skills .carousel .card.laravel .box .name,
 .skills .carousel .card.laravel .box .img {
   color: var(--laravelColor);
+}
+
+.skills .carousel .card.laravel .box .name-shadow,
+.skills .carousel .card.laravel .box .shadow {
+  color: var(--laravelColorL);
 }
 
 .skills .owl-dots {

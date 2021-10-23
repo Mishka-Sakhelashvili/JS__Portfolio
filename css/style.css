@@ -20,6 +20,19 @@
   --cssColor: #264de4;
   --rnColor: #61DBFB;
   --laravelColor: #fb503b;
+
+  --reactColorL: #afebfa;
+  --nodeColorL: #5b8a5a;
+  --sqlColorL: #738aaf;
+  --mongoColorL: #78a170;
+  --phpColorL: #8892BF;
+  --vueColorL: #7fb99f;
+  --typescriptColorL: #c5ab91;
+  --jsColorL: #f0e6a8;
+  --htmlColorL: #f5c6bc;
+  --cssColorL: #a2afe6;
+  --rnColorL: #b0e8f7;
+  --laravelColorL: #f3c3bd;
 }
 
 * {

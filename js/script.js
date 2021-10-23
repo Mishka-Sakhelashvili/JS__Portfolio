@@ -113,10 +113,10 @@ $(document).ready(function () {
     speed: 400
   });
 
-  // VanillaTilt.init(document.querySelectorAll("#about .card"), {
-  //   max: 25,
-  //   speed: 400
-  // });
+  VanillaTilt.init(document.querySelectorAll("#home .glass"), {
+    max: 40,
+    speed: 300
+  });
 
   $('#services .option').click(function () {
     $('#services .option').removeClass('activeServ');

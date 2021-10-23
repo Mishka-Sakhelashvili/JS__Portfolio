@@ -3,6 +3,12 @@
   color: var(--white);
   background: var(--dark);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.services .max-width {
+  width: 100%;
 }
 
 .services .title::before {
@@ -24,7 +30,6 @@
   flex-direction: row;
   align-items: stretch;
   overflow: hidden;
-  /* min-width: 600px; */
   max-width: 900px;
   width: calc(100% - 100px);
   height: 400px;
@@ -35,31 +40,11 @@
   overflow: hidden;
   min-width: 60px;
   margin: 10px;
-  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+  background: var(--white);
   background-size: auto 120%;
   background-position: center;
   cursor: pointer;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-
-.services .option:nth-child(1) {
-  --defaultBackground: var(--white);
-}
-
-.services .option:nth-child(2) {
-  --defaultBackground: var(--white);
-}
-
-.services .option:nth-child(3) {
-  --defaultBackground: var(--white);
-}
-
-.services .option:nth-child(4) {
-  --defaultBackground: var(--white);
-}
-
-.services .option:nth-child(5) {
-  --defaultBackground: var(--white);
 }
 
 .services .option.activeServ {
@@ -88,6 +73,7 @@
 .services .option:not(.activeServ) {
   flex-grow: 1;
   border-radius: 30px;
+  background-color: var(--primaryColor);
 }
 
 .services .option:not(.activeServ) .shadow {
@@ -110,7 +96,7 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 120px;
+  height: 80px;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
 
@@ -159,9 +145,62 @@
   transition-delay: 0.1s;
 }
 
-.services .option.activeServ .test {
+.services .option.activeServ .text {
   position: absolute;
   top: -300px;
   padding: 50px;
   color: black;
+
+}
+
+.services .mobile {
+  display: none;
+}
+
+.services .mobile .card {
+  width: 100%;
+  background: var(--dark);
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services .mobile .card:hover {
+  background: var(--primaryColor);
+}
+
+
+.services .mobile .card .box {
+  transition: all 0.3s ease;
+}
+
+.services .mobile .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .mobile .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+  color: var(--primaryColor);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.services .mobile .card:hover .text {
+  color: var(--dark);
+}
+
+
+@media (max-width: 1000px) {
+  .services .options {
+    display: none;
+  }
+
+  .services .mobile {
+    display: flex;
+    flex-direction: column;
+  }
 }
