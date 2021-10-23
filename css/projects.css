@@ -68,9 +68,8 @@
 
 .projects .swiper-slide .image h3 {
   color: var(--primaryColor);
-  font-size: 36px;
-  font-weight: 700;
-  font-family: "Akaya Kanadaka", cursive;
+  font-size: 28px;
+  font-family: 'Finger Paint', cursive;
   padding: 7px 12px;
   background-color: #353230;
   border-radius: 6px;
@@ -91,9 +90,7 @@
 
 .projects .swiper-slide .content h4 {
   font-size: 18px;
-  font-family: 'Noto Sans Mono', monospace;
   color: var(--primaryColor);
-  font-weight: 700;
 }
 
 .projects .swiper-slide .content span {

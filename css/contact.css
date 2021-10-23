@@ -3,6 +3,13 @@
   color: var(--white);
   background: var(--dark);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contact .max-width{
+  width: 100%;
 }
 
 .contact .title::before {
@@ -189,6 +196,6 @@
 @media (max-width: 450px) {
   .contact .contact-content .container p {
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }

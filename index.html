@@ -8,25 +8,7 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   />
-  <title>Personal Portfolio Website</title>
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@700&display=swap"
-    rel="stylesheet"
-  >
-  <link
-    rel="icon"
-    type="image/png"
-    href="./images/icons/maxcdn-brands.svg"
-  />
+   
   <link
     rel="stylesheet"
     href="./css/swiper.min.css"
@@ -47,10 +29,10 @@
     rel="stylesheet"
     href="./css/navigation.css"
   />
-  <link
+  <!-- <link
     rel="stylesheet"
     href="./css/main-slider.css"
-  />
+  /> -->
   <link
     rel="stylesheet"
     href="./css/home.css"
@@ -91,10 +73,7 @@
     rel="preconnect"
     href="https://fonts.gstatic.com"
   />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"
-  />
+
   <link
     rel="preconnect"
     href="https://fonts.gstatic.com"
@@ -103,12 +82,22 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
   />
-  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
+
   <script src="./js/icon-config.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+  <link
+    rel="icon"
+    type="image/svg"
+    href="./uploads/favicon.svg"
+  />
+
+  <title>Personal Portfolio Website</title>
 </head>
 
 <body>
@@ -124,7 +113,7 @@
   <nav class="navbar">
     <div class="max-width">
       <div class="logo">
-        <a href="#home">.Port</span><span>folio.</span></a>
+        <a href="#home">.Port</span><span>Folio.</span></a>
       </div>
       <ul class="menu">
         <li><a
@@ -190,8 +179,6 @@
       </div>
     </div>
   </section>
-
-
 
   <!-- about section start finish -->
   <section
@@ -981,13 +968,28 @@
     <div class="max-width">
       <h2 class="title">My Resume</h2>
       <div class="resume-content">
-        <h2>resume</h2>
+
+        <div class="pdf">
+          <iframe
+            src="./uploads/cv.pdf"
+            frameBorder="0"
+            scrolling="auto"
+            height="100%"
+            width="100%"
+          ></iframe>
+        </div>
+
+        <a
+          href="./uploads/cv.pdf"
+          target="_blank"
+          class="download"
+        >Download CV</a>
       </div>
     </div>
   </section>
 
   <!-- contact section start finish  -->
-  <!-- <section
+  <section
     class="contact"
     id="contact"
   >
@@ -1102,7 +1104,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- footer section start finish  -->
   <footer>

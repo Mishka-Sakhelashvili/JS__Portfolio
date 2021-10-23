@@ -43,7 +43,7 @@
   border-radius: 20px;
   width: 320px;
   height: 320px;
-  background: url(../images/profile/profile.jpg);
+  background: url(../uploads/profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -72,7 +72,7 @@
 .about .left span {
   width: 25%;
   height: 100%;
-  background: url(../images/profile/profile.jpg);
+  background: url(../uploads/profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   transition: .5s;

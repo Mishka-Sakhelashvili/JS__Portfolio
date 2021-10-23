@@ -76,6 +76,10 @@
   background-color: var(--primaryColor);
 }
 
+.services .option:not(.activeServ):hover {
+  background-color: var(--white);
+}
+
 .services .option:not(.activeServ) .shadow {
   bottom: -40px;
   box-shadow: inset 0 -120px 0 -120px black, inset 0 -120px 0 -100px black;

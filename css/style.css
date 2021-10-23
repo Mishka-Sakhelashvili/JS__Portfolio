@@ -1,5 +1,4 @@
-/*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu:wght@500&display=swap');
 
 :root {
   --primaryColor: #CC6600;
@@ -21,18 +20,18 @@
   --rnColor: #61DBFB;
   --laravelColor: #fb503b;
 
-  --reactColorL: #afebfa;
+  --reactColorL: #bfeefa;
   --nodeColorL: #5b8a5a;
   --sqlColorL: #738aaf;
-  --mongoColorL: #78a170;
-  --phpColorL: #8892BF;
+  --mongoColorL: #81a57a;
+  --phpColorL: #b7b9c5;
   --vueColorL: #7fb99f;
   --typescriptColorL: #c5ab91;
-  --jsColorL: #f0e6a8;
+  --jsColorL: #eee399;
   --htmlColorL: #f5c6bc;
   --cssColorL: #a2afe6;
   --rnColorL: #b0e8f7;
-  --laravelColorL: #f3c3bd;
+  --laravelColorL: #f39287;
 }
 
 * {
@@ -48,10 +47,10 @@ html {
 
 body {
   background-color: var(--dark);
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* all similar content styling codes */
+
 section {
   padding: 70px 0;
 }
@@ -60,15 +59,6 @@ section {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
-}
-
-.about,
-.services,
-.skills,
-.teams,
-.contact,
-footer {
-  /* font-family: "Poppins", sans-serif; */
 }
 
 .about .about-content,
