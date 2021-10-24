@@ -15,8 +15,6 @@ $(document).ready(function () {
     }
   });
 
-
-
   // slide-up script
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
@@ -112,12 +110,6 @@ $(document).ready(function () {
     max: 25,
     speed: 400
   });
-
-  VanillaTilt.init(document.querySelectorAll("#home .glass"), {
-    max: 40,
-    speed: 300
-  });
-
   $('#services .option').click(function () {
     $('#services .option').removeClass('activeServ');
     $(this).addClass('activeServ');

@@ -56,7 +56,6 @@
 .projects .swiper-slide .image {
   width: 100%;
   height: 100%;
-  border-bottom: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -78,7 +77,6 @@
 
 .projects .swiper-slide.swiper-slide-active:hover .image {
   height: 30%;
-  border-bottom: 2px solid var(--primaryColor);
 }
 
 .projects .swiper-slide .content {
