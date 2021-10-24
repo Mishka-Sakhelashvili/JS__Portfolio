@@ -1,21 +1,17 @@
-var canvas = document.querySelector("#scene"),
+var canvas = document.querySelector("#canvas"),
   ctx = canvas.getContext("2d"),
   particles = [],
   amount = 0,
   mouse = { x: 0, y: 0 },
   radius = 1;
 
-var colors = ["#468966", "#FFF0A5", "#FFB03B", "#B64926", "#8E2800"];
 
-// var copy = document.querySelector("#copy");
-var screenWidth = window.screen.width;
-var copy = "PortFolio";
-// if (screenWidth < 1000) {
-//   copy = "dfdfdfdsvcvbgng";
-// }
+var primaryColor = "#CC6600";
+var colors = [primaryColor, primaryColor, primaryColor, primaryColor, primaryColor];
 
 
-
+// anime text is TEXT variables
+var TEXT = "Welcome";
 
 var ww = canvas.width = window.innerWidth;
 var wh = canvas.height = window.innerHeight;
@@ -93,7 +89,7 @@ function initScene() {
 
   ctx.font = "bold " + (ww / 10) + "px sans-serif";
   ctx.textAlign = "center";
-  ctx.fillText(copy, ww / 2, wh / 2);
+  ctx.fillText(TEXT, ww / 2, wh / 2);
 
   var data = ctx.getImageData(0, 0, ww, wh).data;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
