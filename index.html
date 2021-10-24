@@ -8,7 +8,7 @@
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   />
-   
+
   <link
     rel="stylesheet"
     href="./css/swiper.min.css"
@@ -159,25 +159,28 @@
     class="showcase home"
     id="home"
   >
-    <div class="video-container">
+    <div class="cover-container">
       <video
         src="https://designsupply-web.com/samplecontent/vender/codepen/20181014.mp4"
         autoplay
         muted
         loop
       ></video>
-      <div class="overlay">
+      <div class="overlay"></div>
+      <div class="canvas">
+        <canvas id="scene"></canvas>
       </div>
     </div>
-    <div class="content">
-      <div class="home-content glass">
-        <div class="text-1">Hello, my name is</div>
-        <div class="text-2">Mishka</div>
-        <div class="text-3">And I'm a</div>
-        <div><span class="typing"></span></div>
-        <div>Developer</div>
-      </div>
+
+    <div class="text-container">
+      <p>
+        Hello I'm a   
+      </p>
+      <p>
+        <span class="typing"></span>
+      </p>
     </div>
+
   </section>
 
   <!-- about section start finish -->
@@ -1117,6 +1120,7 @@
       >M.Sakhelashvili</a></p>
   </footer>
 
+  <script src="./js/anime.js"></script>
   <script src="./js/tilt.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/mainSlider.js"></script>
