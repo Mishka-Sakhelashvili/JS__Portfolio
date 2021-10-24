@@ -52,6 +52,8 @@
 }
 
 .about .left .card:before {
+  overflow: hidden;
+  border-radius: 20px;
   content: '';
   position: absolute;
   width: 100%;
