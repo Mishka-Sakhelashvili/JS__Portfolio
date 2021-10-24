@@ -5,14 +5,11 @@ var canvas = document.querySelector("#canvas"),
   mouse = { x: 0, y: 0 },
   radius = 1;
 
-
 var primaryColor = "#CC6600";
-var colors = [primaryColor, primaryColor, primaryColor, primaryColor, primaryColor];
-
-
+var whiteColor = "#fff";
+var colors = [primaryColor, whiteColor, primaryColor, whiteColor, primaryColor];
 // anime text is TEXT variables
 var TEXT = "Welcome";
-
 var ww = canvas.width = window.innerWidth;
 var wh = canvas.height = window.innerHeight;
 
@@ -29,31 +26,24 @@ function Particle(x, y) {
   this.accX = 0;
   this.accY = 0;
   this.friction = Math.random() * 0.05 + 0.94;
-
   this.color = colors[Math.floor(Math.random() * 6)];
 }
 
 Particle.prototype.render = function () {
-
-
   this.accX = (this.dest.x - this.x) / 1000;
   this.accY = (this.dest.y - this.y) / 1000;
   this.vx += this.accX;
   this.vy += this.accY;
   this.vx *= this.friction;
   this.vy *= this.friction;
-
   this.x += this.vx;
   this.y += this.vy;
-
   ctx.fillStyle = this.color;
   ctx.beginPath();
   ctx.arc(this.x, this.y, this.r, Math.PI * 2, false);
   ctx.fill();
-
   var a = this.x - mouse.x;
   var b = this.y - mouse.y;
-
   var distance = Math.sqrt(a * a + b * b);
   if (distance < (radius * 70)) {
     this.accX = (this.x - mouse.x) / 100;
@@ -61,7 +51,6 @@ Particle.prototype.render = function () {
     this.vx += this.accX;
     this.vy += this.accY;
   }
-
 };
 
 function onMouseMove(e) {
@@ -84,17 +73,13 @@ function onTouchEnd(e) {
 function initScene() {
   ww = canvas.width = window.innerWidth;
   wh = canvas.height = window.innerHeight;
-
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
   ctx.font = "bold " + (ww / 10) + "px sans-serif";
   ctx.textAlign = "center";
   ctx.fillText(TEXT, ww / 2, wh / 2);
-
   var data = ctx.getImageData(0, 0, ww, wh).data;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.globalCompositeOperation = "screen";
-
   particles = [];
   for (var i = 0; i < ww; i += Math.round(ww / 150)) {
     for (var j = 0; j < wh; j += Math.round(ww / 150)) {
@@ -104,7 +89,6 @@ function initScene() {
     }
   }
   amount = particles.length;
-
 }
 
 function onMouseClick() {
@@ -121,7 +105,6 @@ function render(a) {
     particles[i].render();
   }
 };
-
 
 window.addEventListener("resize", initScene);
 window.addEventListener("mousemove", onMouseMove);
