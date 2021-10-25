@@ -77,11 +77,12 @@
   transition: all 0.5s ease-in-out;
 }
 
-.projects .swiper-slide.swiper-slide-active:hover .image {
-  height: 30%;
+.projects .swiper-slide.swiper-slide-active .image {
+  height: 30% !important;
 }
-.projects .swiper-slide.swiper-slide-active:hover .image h3 {
-  margin-top: 20px
+
+.projects .swiper-slide.swiper-slide-active .image h3 {
+  margin-top: 20px !important;
 }
 
 .projects .swiper-slide .content {
@@ -99,14 +100,15 @@
 .projects .swiper-slide .content span {
   color: var(--white);
   font-size: 13px;
-  
+
 }
 
 .projects .swiper-slide .content .description {
   margin-bottom: 15px;
 }
+
 .projects .swiper-slide .content .technology {
- text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .projects .swiper-slide .content .link {
