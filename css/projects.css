@@ -77,6 +77,17 @@
   transition: all 0.5s ease-in-out;
 }
 
+@media (max-width: 600px) {
+  .projects .swiper-slide .image {
+    transition-delay: 0.5s;
+  }
+
+  .projects .swiper-slide .image h3 {
+    transition-delay: 0.5s;
+  }
+
+}
+
 .projects .swiper-slide.swiper-slide-active .image {
   height: 30% !important;
 }

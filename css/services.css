@@ -140,9 +140,8 @@
 }
 
 .services .main {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: var(--primaryColor);
+  font-size: 24px;
+  color: var(--white);
 }
 
 .services .sub {
@@ -154,7 +153,10 @@
   top: -300px;
   padding: 50px;
   color: black;
+  font-size: 20px;
 
+  text-indent: 20px;
+  text-align: justify;
 }
 
 .services .mobile {
