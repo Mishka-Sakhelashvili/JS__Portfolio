@@ -61,7 +61,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   transition: all 0.5s ease-in-out;
 }
 
@@ -73,10 +73,15 @@
   background-color: #353230;
   border-radius: 6px;
   border: 2px solid var(--primaryColor);
+  margin-top: 60px;
+  transition: all 0.5s ease-in-out;
 }
 
 .projects .swiper-slide.swiper-slide-active:hover .image {
   height: 30%;
+}
+.projects .swiper-slide.swiper-slide-active:hover .image h3 {
+  margin-top: 20px
 }
 
 .projects .swiper-slide .content {
