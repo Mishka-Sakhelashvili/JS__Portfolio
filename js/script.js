@@ -91,10 +91,10 @@ $(document).ready(function () {
     },
     initialSlide: 2,
     // loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInterraction: false,
-    // },
+    autoplay: {
+      delay: 4000,
+      disableOnInterraction: false,
+    },
   };
 
   var swiper = new Swiper("#FrontEnd", swiperConfig);
