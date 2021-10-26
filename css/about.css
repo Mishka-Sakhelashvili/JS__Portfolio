@@ -95,7 +95,8 @@
 
 .about .left span:nth-child(1) {
   background-position: 0;
-  transition-delay: 0
+  transition-delay: 0;
+  border-bottom-left-radius: 20px;
 }
 
 .about .left span:nth-child(2) {
