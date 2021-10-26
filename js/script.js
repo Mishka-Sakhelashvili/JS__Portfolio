@@ -22,11 +22,13 @@ $(document).ready(function () {
     $("html").css("scrollBehavior", "auto");
   });
 
+
+  // esc button
   $(document).keyup(function (e) {
     if (e.which == 27) {
       $("html").animate({ scrollTop: 0 });
       $("html").css("scrollBehavior", "auto");
-    };   // esc
+    };
   });
 
   $(".navbar .menu li a").click(function () {
@@ -47,13 +49,6 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
-
-  // var typed = new Typed(".typing-2", {
-  //   strings: ["Front Developer", "Back Developer", "Mobile Developer"],
-  //   typeSpeed: 100,
-  //   backSpeed: 60,
-  //   loop: true,
-  // });
 
   // owl carousel script
   $(".carousel").owlCarousel({
@@ -92,7 +87,7 @@ $(document).ready(function () {
     initialSlide: 2,
     // loop: true,
     autoplay: {
-      delay: 4000,
+      delay: 6000,
       disableOnInterraction: false,
     },
   };

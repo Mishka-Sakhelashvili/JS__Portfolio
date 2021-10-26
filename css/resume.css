@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.resume .title::after {
+  content: "C V";
+}
+
 .resume .max-width {
   width: 100%;
 }
@@ -27,8 +31,36 @@
   height: 100%;
 }
 
-.resume .title::after {
-  content: "resume me";
+.resume .test {
+  width: 100%;
+  /* height: 800px; */
+  overflow: hidden;
+
+  /* background-image: url("../uploads/resume.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+  /* text-align: center; */
+}
+
+/* .resume .test img {
+  height: 100%;
+  border: 1px solid var(--primaryColor);
+} */
+
+.resume ul { 
+  list-style-type: disc; 
+  list-style-position: inside; 
+}
+.resume ul ul, ol ul { 
+  list-style-type: circle; 
+  list-style-position: inside; 
+  margin-left: 15px; 
+}
+
+.resume li
+{
+    display: list-item;
 }
 
 .resume .download {

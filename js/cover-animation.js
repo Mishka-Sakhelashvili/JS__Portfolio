@@ -10,6 +10,9 @@ var whiteColor = "#fff";
 var colors = [primaryColor, whiteColor, primaryColor, whiteColor, primaryColor];
 // anime text is TEXT variables
 var TEXT = "My Portfolio";
+if (window.innerWidth < 700) {
+  TEXT = "P o r t f o l i o";
+}
 var ww = canvas.width = window.innerWidth;
 var wh = canvas.height = window.innerHeight;
 
@@ -74,7 +77,7 @@ function initScene() {
   ww = canvas.width = window.innerWidth;
   wh = canvas.height = window.innerHeight;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.font = "bold " + (ww / 6) + "px sans-serif";
+  ctx.font = "bold " + (ww / 7) + "px sans-serif";
   ctx.textAlign = "center";
   ctx.fillText(TEXT, ww / 2, wh / 2);
   var data = ctx.getImageData(0, 0, ww, wh).data;

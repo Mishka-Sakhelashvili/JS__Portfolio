@@ -16,28 +16,23 @@
 }
 
 .about .about-content .left {
-  width: 45%;
+  width: 50%;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+}
+
+.about .about-content .column {
+  padding: 30px;
 }
 
 .about .about-content .right {
   padding-left: 30px;
-  width: 55%;
+  width: 50%;
+  text-indent: 20px;
+  text-align: justify;
+  background-color: blueviolet;
 }
 
-.about .about-content .right span {
-  font-size: 25px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: var(--primaryColor);
-}
-
-.about .about-content .right ul li {
-  color: var(--grey);
-  margin-bottom: 5px;
-}
 
 .about .left .card {
   border-radius: 20px;
@@ -132,8 +127,12 @@
     flex-direction: column;
   }
 
-  .about .about-content .column {
+  .about .about-content .left {
     width: 100%;
+  }
+  .about .about-content .right {
+    width: 100%;
+    height: auto;
   }
 }
 
