@@ -74,10 +74,16 @@
   flex-grow: 1;
   border-radius: 30px;
   background-color: var(--primaryColor);
+  opacity: 0.9;
 }
+
 
 .services .option:not(.activeServ):hover {
   background-color: var(--white);
+}
+
+.services .option:not(.activeServ):hover .icon {
+  color: var(--white);
 }
 
 .services .option:not(.activeServ) .shadow {
@@ -122,7 +128,8 @@
   height: 40px;
   border-radius: 100%;
   background-color: black;
-  color: var(--defaultBackground);
+  color: var(--primaryColor);
+  transition: all 0.5s;
 }
 
 .services .info {

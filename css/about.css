@@ -32,6 +32,7 @@
   border-radius: 20px;
   font-size: 20px;
   transition: all .5s;
+  cursor: pointer;
 }
 
 .about .about-content .right span {
@@ -153,6 +154,12 @@
     width: 100%;
     padding: 20px;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about .about-content .right {
+    max-width: 320px;
   }
 }
 
