@@ -96,7 +96,9 @@
 .about .left span:nth-child(1) {
   background-position: 0;
   transition-delay: 0;
+  /*  */
   border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .about .left span:nth-child(2) {
@@ -111,7 +113,9 @@
 
 .about .left span:nth-child(4) {
   background-position: 100%;
-  transition-delay: .3s
+  transition-delay: .3s;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .about .left .content {
