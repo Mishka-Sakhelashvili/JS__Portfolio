@@ -100,10 +100,14 @@ $(document).ready(function () {
 
   $("#year").text(new Date().getFullYear());
 
-  VanillaTilt.init(document.querySelectorAll(".skills .card"), {
-    max: 25,
-    speed: 400
-  });
+  if (window.innerWidth > 800) {
+    VanillaTilt.init(document.querySelectorAll(".skills .card"), {
+      max: 25,
+      speed: 400
+    });
+  }
+
+  
 
   $('#services .option').click(function () {
     $('#services .option').removeClass('activeServ');

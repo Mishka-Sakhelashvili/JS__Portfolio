@@ -1,10 +1,11 @@
 /* services section styling */
 .services {
   color: var(--white);
-  background: var(--dark);
   min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .services .max-width {
@@ -74,7 +75,7 @@
   flex-grow: 1;
   border-radius: 30px;
   background-color: var(--primaryColor);
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 
@@ -178,6 +179,7 @@
   padding: 20px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-bottom: 30px;
 }
 
 .services .mobile .card:hover {

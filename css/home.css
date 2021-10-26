@@ -15,7 +15,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   position: absolute;
 }
 
@@ -55,7 +55,7 @@
   }
 }
 
-.home .lamp {
+.lamp {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,7 +68,7 @@
   z-index: -1;
 }
 
-.home .lava {
+.lamp .lava {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -76,14 +76,15 @@
   left: 0;
 }
 
-.home .blob {
+.lamp .blob {
   border-radius: 50%;
   background: var(--primaryColor);
+  opacity: 0.5;
   position: absolute;
 }
 
 
-.home .blob:nth-child(1) {
+.lamp .blob:nth-child(1) {
   width: 200px;
   height: 200px;
   left: 35%;
@@ -91,7 +92,7 @@
   animation: wobble 4s ease-in-out alternate infinite, blob-one ease-in-out 13s infinite;
 }
 
-.home .blob:nth-child(2) {
+.lamp .blob:nth-child(2) {
   width: 330px;
   height: 330px;
   right: 24%;
@@ -99,7 +100,7 @@
   animation: wobble 5s ease-in-out alternate infinite, blob-two ease-in-out 22s infinite;
 }
 
-.home .blob:nth-child(3) {
+.lamp .blob:nth-child(3) {
   width: 150px;
   height: 150px;
   bottom: -15%;
@@ -107,7 +108,7 @@
   animation: wobble 6s ease-in-out alternate infinite, blob-three ease-in-out 16s infinite;
 }
 
-.home .blob:nth-child(4) {
+.lamp .blob:nth-child(4) {
   width: 235px;
   height: 235px;
   bottom: -19%;
@@ -115,7 +116,7 @@
   animation: wobble 7s ease-in-out alternate infinite, blob-four ease-in-out 12s infinite;
 }
 
-.home .blob:nth-child(4) {
+.lamp .blob:nth-child(4) {
   width: 235px;
   height: 235px;
   bottom: -19%;
@@ -123,7 +124,7 @@
   animation: wobble 8s ease-in-out alternate infinite, blob-four ease-in-out 12s infinite;
 }
 
-.home .blob:nth-child(5) {
+.lamp .blob:nth-child(5) {
   width: 55px;
   height: 55px;
   bottom: -25%;
@@ -131,7 +132,7 @@
   animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 32s infinite;
 }
 
-.home .blob:nth-child(6) {
+.lamp .blob:nth-child(6) {
   width: 35px;
   height: 35px;
   bottom: -25%;
@@ -139,7 +140,7 @@
   animation: wobble 10s ease-in-out alternate infinite, blob-six ease-in-out 12s infinite;
 }
 
-.home .blob:nth-child(7) {
+.lamp .blob:nth-child(7) {
   width: 435px;
   height: 435px;
   bottom: -85%;
