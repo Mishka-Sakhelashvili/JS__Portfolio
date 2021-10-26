@@ -1,11 +1,11 @@
 /* contact section styling */
 .contact {
   color: var(--white);
-  background: var(--dark);
   min-height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 .contact .max-width{

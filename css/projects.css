@@ -1,7 +1,9 @@
 /* projects section styling */
 .projects {
   color: var(--white);
-  background: var(--dark);
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .projects .title {
