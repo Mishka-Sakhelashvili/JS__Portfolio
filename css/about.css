@@ -21,17 +21,34 @@
   justify-content: center;
 }
 
-.about .about-content .column {
-  padding: 30px;
-}
 
 .about .about-content .right {
-  padding-left: 30px;
   width: 50%;
   text-indent: 20px;
   text-align: justify;
-  background-color: blueviolet;
+  background-color: var(--dark);
+  padding: 50px;
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 20px;
+  transition: all .5s;
 }
+
+.about .about-content .right span {
+  color: var(--primaryColor);
+  font-family: 'Finger Paint', cursive;
+  transition: all .5s;
+}
+
+.about .about-content .right:hover {
+  background-color: var(--primaryColor);
+  opacity: 0.9;
+}
+
+.about .about-content .right:hover span {
+  color: var(--dark);
+}
+
 
 
 .about .left .card {
@@ -96,19 +113,19 @@
 }
 
 .about .left .content {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: var(--primaryColor);
-  font-size: 18px;
+  color: var(--white);
+  font-size: 24px;
   padding: 20px 20px;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  background-color: black;
+  background-color: var(--primaryColor);
   opacity: 0.9;
+  border-radius: 20px;
 }
 
 .about .left .card:hover .img>span {
@@ -122,21 +139,24 @@
 }
 
 @media (max-width: 950px) {
-
   .about .about-content {
     flex-direction: column;
   }
 
   .about .about-content .left {
+    padding: 0;
+    margin-bottom: 30px;
     width: 100%;
   }
+
   .about .about-content .right {
     width: 100%;
-    height: auto;
+    padding: 20px;
+    font-size: 16px;
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 374px) {
   .about .about-content .left {
     display: none;
   }
