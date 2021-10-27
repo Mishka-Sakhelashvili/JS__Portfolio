@@ -124,7 +124,7 @@
   transform: rotate(45deg) translate(-7px, -5px);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .navbar .menu-btn {
     display: block;
     z-index: 999;

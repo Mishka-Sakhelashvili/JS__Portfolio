@@ -24,11 +24,13 @@
   width: 100%;
   height: 400px;
   overflow: hidden;
+  
 }
 
 .resume .cvContainer iframe {
   width: 100%;
   height: 100%;
+  border: 2px solid var(--primaryColor);
 }
 
 .resume .download {

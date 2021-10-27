@@ -85,7 +85,7 @@ $(document).ready(function () {
       slideShadows: true,
     },
     initialSlide: 2,
-    // loop: true,
+    loop: true,
     autoplay: {
       delay: 6000,
       disableOnInterraction: false,
